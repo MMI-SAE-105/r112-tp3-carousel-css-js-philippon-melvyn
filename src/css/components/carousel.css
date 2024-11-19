@@ -49,7 +49,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   /* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
   border: solid 1px;
   /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .carousel__button--prev {
@@ -67,7 +67,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   /* Marge négative à gauche pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
   margin-left: -24px;
   /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
-  margin-right: -24px;
+  margin: right -24px;
   /* Définit le type de défilement pour accrocher les éléments - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type */
   scroll-snap-type: x mandatory;
 }
@@ -82,16 +82,4 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__item img {
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
   display: block;
-}
-
-
-
-
-/* Limite la largeur maximale de l'image à 100% de son conteneur - https://developer.mozilla.org/fr/docs/Web/CSS/max-width */
-/* Ajuste la hauteur de l'image automatiquement pour conserver les proportions - https://developer.mozilla.org/fr/docs/Web/CSS/height */
-img {
-  max-width: 100%;
-  height: auto;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
 }
